@@ -9,6 +9,9 @@ a:hover{
     text-decoration: none;
     color: inherit;
 }
+.slick-prev, .slick-next {
+	z-index: 2;
+}
 .for-mobile{
     display: none;
 }
@@ -464,11 +467,11 @@ a:hover{
     }
     .caption{
         margin: 0;
-        top: 20%;
-        bottom: auto;
-        left: 3em;
-        text-align: center;
-        width: 80%;
+		top: 5%;
+		bottom: auto;
+		left: 1em;
+		text-align: left;
+		width: 90%;
     }
     .caption5{
         text-align: center;
@@ -484,10 +487,13 @@ a:hover{
         text-align: center;
     }
     .caption h1 {
-        font-size: 2em;
+        font-size: 1.5em;
         font-style: italic;
         font-weight: bold;
         margin-right: 0;
+    }
+    .caption h3 {
+    	font-size: 1.5em;
     }
     .caption1 img{
         margin-left: 0;
@@ -573,5 +579,16 @@ a:hover{
     }
     #navbarToggleExternalContent ul li a{
         color: white;
+    }
+}
+@media only screen and (max-width: 375px){
+	.caption h1 {
+        font-size: 1.3em;
+        font-style: italic;
+        font-weight: bold;
+        margin-right: 0;
+    }
+    .caption h3 {
+    	font-size: 1.3em;
     }
 }
